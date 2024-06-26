@@ -26,8 +26,6 @@ public class DefaultValues implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-
-
         System.out.println("Inserted default output devices sucessfully! ");
 
         Room living_room = new Room();

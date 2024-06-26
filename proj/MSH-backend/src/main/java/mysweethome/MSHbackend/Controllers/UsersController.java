@@ -130,6 +130,7 @@ public class UsersController {
         @ApiResponse(responseCode = "422", description = "An account with these credentials does not exist!",  content = @Content),
         @ApiResponse(responseCode = "500", description = "Internal processing error!",  content = @Content)
     })
+    
     @GetMapping(path = "/login")
     public @ResponseBody ResponseEntity<User> loginUser(@RequestParam String email, @RequestParam String password) {
         System.out.println("Logging in user: " + email + " " + password);
